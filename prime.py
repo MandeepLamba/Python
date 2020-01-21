@@ -1,3 +1,5 @@
+#Check if Number is Prime or not..
+
 num = int(input("Enter a Number: "))
 isPrime = True
 for i in range(num-1,1,-1):

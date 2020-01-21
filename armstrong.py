@@ -1,3 +1,4 @@
+# To Find if a numbe is Armstrong
 num=numcopy=int(input("Enter a Number: "))
 sum = 0
 while numcopy > 0:

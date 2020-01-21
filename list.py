@@ -1,3 +1,5 @@
+# Oprations on List
+
 list = [1,3,5,7]
 print(list)
 print(type(list))

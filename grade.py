@@ -1,3 +1,5 @@
+# if in Python
+
 marks = int(input("Enter marks(1-100)"))
 
 if marks>90:
