@@ -24,5 +24,5 @@ from time import sleep
 from datetime import datetime
 for x in range(500):
     sys.stdout.write('\r'+str(datetime.now()))
-    sleep(0.1)
+    sleep(0.5)
     sys.stdout.flush()

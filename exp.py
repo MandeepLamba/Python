@@ -1,3 +1,2 @@
 # Experimantaion
-
-print(max([1,2,3,6,4]))
+print(sum([1,2,3,4,5]))

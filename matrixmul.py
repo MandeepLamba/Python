@@ -1,13 +1,13 @@
 #Multiplication and Addition of Matrices
-matrices=rows=columns=[]
-for m in range(1,3):
-    rows.append(int(input("Rows in Matrix "+str(m)+" : ")))
-    columns.append(int(input("Columns in Matrix "+str(m)+" : ")))
-    print("Enter Elements:")
-    matrices.append([[int(input()) for i in range(columns)] for j in range(rows)])
-    if(m==2):
-        matrices.append([[(matrices[0][i][j]+matrices[1][i][j]) for i in range(columns)] for j in range(rows)])
-        matrices.append([[(matrices[0][i][j]+matrices[1][i][j]) for i in range(columns)] for j in range(rows)])
 
-print(matrices[2])
-print(matrices[3])
+matrices = []
+rowcol = int(input("Rows & Columns in Matrix: "))
+for m in range(2):
+    print("Enter Elements of Matrix "+str(m+1)+": ")
+    matrices.append([[int(j) for j in input().split()] for i in range(rowcol)])
+
+matrices.append([[(matrices[0][i][j]+matrices[1][i][j]) for j in range(rowcol)] for i in range(rowcol)])
+matrices.append([[sum(matrices[0][i][k]*matrices[1][k][j] for k in range(rowcol)) for j in range(rowcol)] for i in range(rowcol)])
+
+print("Sum: ",matrices[2])
+print("\nMul: ",matrices[3])
