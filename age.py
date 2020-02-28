@@ -1,8 +1,7 @@
 from datetime import date
-cdate=date.today()
-day,month,year = [int(i) for i in input("Enter DOB (dd-mm-yyyy): ").split("-")]
-isleep = True
-isvalid = True
+# cdate=date.today()
+day,month,year = [int(i) for i in input("Enter Date (dd-mm-yyyy): ").split("-")]
+isleep = isvalid = True
 
 if (year%4)==0:
     if (year%100)==0:
@@ -30,13 +29,15 @@ elif month==2:
             isvalid = False
 else:
     isvalid = False
-if year>2019:
-    isvalid = False
-
 if isvalid:
-    DOB = date(year,month,day)
-    ageyear = int((cdate - DOB).days / 365.2425)
-    agedays = int((cdate - DOB).days % 365.2425)
-    print("Age is {} years and {} days!".format(ageyear,agedays))
+    print("Valid Date")
 else:
-    print("Date is not valid")
+    print("Invalid Date")
+
+# if isvalid:
+#     DOB = date(year,month,day)
+#     ageyear = int((cdate - DOB).days / 365.2425)
+#     agedays = int((cdate - DOB).days % 365.2425)
+#     print("Age is {} years and {} days!".format(ageyear,agedays))
+# else:
+#     print("Date is not valid")
