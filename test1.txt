@@ -1,0 +1,3 @@
+line 1 file test1
+line 2 Today
+line 3 happy
